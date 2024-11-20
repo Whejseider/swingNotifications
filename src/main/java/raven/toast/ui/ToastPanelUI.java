@@ -218,7 +218,8 @@ public class ToastPanelUI extends BasicPanelUI implements StyleableUI, PropertyC
         button.setName("Toast.closeButton");
         button.putClientProperty(BUTTON_TYPE, BUTTON_TYPE_TOOLBAR_BUTTON);
         button.putClientProperty(STYLE, "" +
-                "arc:999");
+                "arc:999;" +
+                "background:null;");
         button.setIcon(closeButtonIcon);
         button.addActionListener(e -> closeButtonClicked(c));
         return button;
